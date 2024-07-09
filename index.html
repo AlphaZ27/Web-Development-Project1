@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+		<title>Home</title>
+		<link rel="overall-plotpage" type="html" href="overall-plot.html">
+		<link rel="characters" type="html" href="characters.html">
+		<link rel="gameplay&visualspage" type="html" href="gameplay&visual.html">
+		<link rel="thoughts-overallpage" type="html" href="thoughts-overall.html">
+	</head>
+	<body>
+		<div class="topnav" id="myTopnav">
+			<span><img src="images/last of us 2 logo.jpg" style="width:50px; float:left"></span>
+			<a href="index.html" class="active">Home</a>	
+			<a href="overall-plot.html">Overall Plot</a>	
+			<a href="characters.html">Characters</a>
+			<a href="gameplay_visual.html">Gameplay_Visualisation</a>
+			<a href="thoughts-overall.html">My Thoughts Overall</a>
+			<a href="javascript:void(0);" class="icon" onclick="openNav()">
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+			</a>
+		</div>
+		<div id="myNav" class="overlay">
+			<div class="overlay-content">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="index.html" class="active">Home</a>
+				<a href="overall-plot.html">Overall Plot</a>	
+				<a href="characters.html">Characters</a>
+				<a href="gameplay_visual.html">Gameplay_Visualisation</a>
+				<a href="thoughts-overall.html">My Thoughts Overall</a>
+			</div>
+		</div>
+	
+		<div class="hero-image">
+		  <div class="hero-text">
+			<h1 style="color:white; text-decoration:underline;">The Last of Us Part 2</h1>
+			<p>Fanpage</p>
+		  </div>
+		</div>
+		
+		
+			<video autoplay muted loop>
+				<source src="videos/tlouTrailer.mp4" type="video/mp4"/>
+				Your browser does not support HTML5 video.
+			</video>
+		
+		
+		<div id="tab1" onClick="JavaScript:selectTab(1);">Concept Art 1</div>
+		<div id="tab2" onClick="JavaScript:selectTab(2);">Concept Art 2</div>
+		<div id="tab3" onClick="JavaScript:selectTab(3);">Concept Art 3</div>
+		<div id="tab1" onClick="JavaScript:selectTab(4);">Concept Art 4</div>
+		<div id="tab2" onClick="JavaScript:selectTab(5);">Concept Art 5</div>
+		<div id="tab3" onClick="JavaScript:selectTab(6);">Concept Art 6</div>
+		<br/>
+		
+		<div id="tab1Content">
+			<img src="images/art1.jpg" width="1000" height="600" alt="Overview of Post-Apocalyptic Seattle">  
+		</div>
+		<div id="tab2Content">
+			<img src="images/art2.jpg" width="1000" height="600" alt="Abandoned cars covered in foliage">  
+		</div>
+		<div id="tab3Content">
+			<img src="images/art3.jpg" width="1000" height="600" alt="The Jackson Settlement">  
+		</div>
+		<div id="tab4Content">
+			<img src="images/art4.png" width="1000" height="600" alt="A tree burning, surrounded by cars and burnt trees">  
+		</div>
+		<div id="tab5Content">
+			<img src="images/art5.jpg" width="1000" height="600" alt="Ellie standing on top of a building watching her surroundings">  
+		</div>
+		<div id="tab6Content">
+			<img src="images/art6.jpg" width="1000" height="600" alt="Ellie in a boat in the forefront, the Seattle Space needle in the background">  
+		</div>
+		
+		
+		
+		
+		<button onclick="scrollToTop()" class="scroll" title="Go to top">Top</button>
+	
+		<footer id="site-footer">
+			<div id="container">
+				<div id="row">
+					<div id="col1">
+						<h4>Page Links</h4>
+							<ul id="footer-links">
+								<li><a href="index.html" id="hyperlinks">Home</a></li>
+								<li><a href="overall-plot.html" id="hyperlinks">Overall Plot</a></li>
+								<li><a href="characters.html" id="hyperlinks">Characters</a></li>
+								<li><a href="gameplay_visual.html" id="hyperlinks">Gameplay_Visualisation</a></li>
+								<li><a href="thoughts-overall.html" id="hyperlinks">My Thoughts Overall</a></li>
+							</ul>
+					</div>
+				</div>	
+			</div>	
+		</footer>
+	</body>
+</html>

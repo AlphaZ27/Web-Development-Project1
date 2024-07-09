@@ -1,0 +1,437 @@
+/* --------------  HTML Elements ------------- */
+body {
+	background-color: #000000;
+}
+body, html {
+	height: 100%;
+}
+h1, h2 {
+	font-family: 'Fjalla One', sans-serif;
+	color: #FFD700;
+	font: bold;
+	text-decoration: underline;
+}
+p {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #ffffff;
+}
+footer {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+video {
+	margin-left: 90px;
+}
+
+
+
+/*  -------------- CLASSES --------------- */
+/*     HomePage Image   */
+.hero-image {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/tlouWallpaper.jpg");
+	height: 90%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+
+
+/*       Top Menu         */
+.topnav {
+	background-color: #2a2a2c;
+	width: 100%;
+	overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	display: block;
+	color: #FFD700;
+	text-align: center;
+	padding: 14px 16px;
+	font-size: 17px;
+	width: 19%;
+	font-family: 'Fjalla One', sans-serif;
+	color: #FFD700;
+	font: bold;
+	text-decoration: underline;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: #000000;
+	color: #000099;
+}
+/* Add an active class to highlight the current page */
+.topnav a.active {
+	background-color: #2a2a2c;
+	color: #ffffff;
+}
+/* Hide the hamberger menu icon on small screens */
+.topnav .icon {
+	display: none;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
+Show the hamberger that should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+	.topnav a:not(:nth-child(2)) {display: none;}
+	.topnav a.icon {
+		float: right;
+		display: block;
+  }
+}
+
+
+.overlay {
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.85);
+	overflow-y: hidden;
+	transition: 0.5s;
+}
+.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #e6c300;
+	display: block;
+	transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+	color: #000099;
+}
+.overlay .closebtn {
+	position: absolute;
+	top: 18px;
+	right: 45px;
+	font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+	.overlay {overflow-y: auto;}
+	.overlay a {font-size: 20px}
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+  }
+}
+
+
+
+/*       Text boxes; for the first page and fourth page       */
+.text1, .text2, .text3, .text4, .text5 {
+	padding: 2%;
+	font-size: 1.1em;
+}
+.title1, .title2, .title3, .title4, .title5 {
+	padding: 2%;
+}
+
+
+/*             Character cards         */
+/* Three columns side by side */
+.title {
+	color: #0000ff; /* Lighter blue for visibility */
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+.column {
+	float: left;
+	flex: 33.33%;
+	max-width: 33.33%;
+	margin-bottom: 16px;
+	padding: 2 2 2 4px;
+}
+/* Add some shadows to create a card effect */
+.card {
+	box-shadow: 0 4px 8px 0 rgba(242, 242, 242, 0.6); /* grey shadows */
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+/* Some left and right padding inside the container */
+.container {
+	padding: 0 12px;
+}
+/* Clear floats */
+.container::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+/* Responsive layout - makes a two column-layout instead of three columns */
+@media screen and (max-width: 800px) {
+  .column {
+		flex: 50%;
+		max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+		flex: 100%;
+		max-width: 100%;
+  }
+}
+
+
+/*              Parallax effect              */
+.parallax {
+  /* The image used */
+	background-image: url("images/scenery.jpg");
+
+  /* Full height */
+	height: 100%;
+
+  /* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax2 {
+	background-image: url("images/scenery1.jpg");
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax3 {
+	background-image: url("images/scenery2.jpg");
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax, .parallax2 {
+	background-attachment: scroll;
+  }
+}
+.infoBox {
+	font-size: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+
+/*      Backround Image         */
+.bImage {
+	position: relative;
+	display: flex;
+	background-image: url("images/surrounded.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*  Adding an opacity to the background but not to the words */
+.clearB {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Scroll to Top Button */
+.scroll {  
+   	background-color: #FFD700; 
+	color: #ffffff;  
+	padding: 15px;         
+	border-radius: 10px;   
+	font-size: 18px;
+	cursor: pointer;
+	border: none;          
+	outline: none;
+	bottom: 20px;         
+	right: 30px;           
+	z-index: 99; 
+} 
+.scroll:hover {
+	background-color: #ffffff; 
+	color: #0000ff;
+}
+
+
+
+
+/*  --------------- ID's ---------------   */
+/* Image box/column */
+#column {
+	width: 500px;
+	padding: 2%;
+}
+/* Makes the Images stack on top of each other instead of next to the other */
+@media screen and (max-width: 600px) {
+  #column {
+	width: 50%;	
+  }
+}
+
+
+/*            Footer            */
+#site-footer {
+	background-color: #2a2a2c;
+	padding: 45px 0 20px;
+	font-size: 20px;
+	line-height: 24px;
+}
+#site-footer a {
+	color: #e6c300;
+}
+#site-footer a:hover {
+	color: #000099;
+}
+#site-footer h4 {
+	font-family: 'Fjalla One', sans-serif;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-top: 5px;
+	letter-spacing: 2px;
+}
+#container {
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#footer-links {
+	padding-left: 0;
+	list-style: none;
+}
+#footer-links li {
+	display: block;
+}
+#footer-links a {
+	color: #e6c300;
+}
+#footer-links a:active, .footer-links a:focus, .footer-links a:hover {
+	color: #000099;
+}
+#footer-links.inline li {
+	display: inline-block;
+}
+
+
+
+/*   Spoiler Show/Hide Button  */
+#button {
+	width: 200px;
+	font-size: 18px;
+	padding: 10px;
+	border: solid;
+	background: #2a2a2c;
+	color: #0000ff;
+	cursor: pointer;
+	margin-left: 45%;
+	border-radius: 20px;
+}
+#button:hover {
+	background: #000000;
+	color: #ffffff;
+}
+#spoiler {
+	display: none;
+}
+
+
+
+/*          6 Button Tabs           */
+#tab1, #tab2, #tab3, #tab4, #tab5, #tab6 {
+	float: left;
+	padding: 14px 16px;
+	font-size: 21px;
+	background: #2a2a2c;
+	color: #0000ff;
+	text-align: centre;
+	cursor: pointer;
+	border-radius: 25px; /* rounded border */
+	margin-right: 1px;
+	width: 16%;
+	border: solid;
+}
+#tab1:hover, #tab2:hover, #tab3:hover, #tab4:hover, #tab5:hover, #tab6:hover {
+	background: #000000;
+	color: #ffffff;
+	border: solid;
+}
+#tab1Content, #tab2Content, #tab3Content, #tab4Content, #tab5Content, #tab6Content {
+	height: 100%;
+	padding: 100px 20px;
+	border: 1px solid #000000;
+	border-radius: 10px;
+	background-image: linear-gradient(#000000, #2a2a2c, #000099, #0000ff, #000000);
+	font-size: 30px;
+}
+#tab1Content {
+	display: block; 
+}
+#tab2Content, #tab3Content, #tab4Content, #tab5Content, #tab6Content {
+	display: none; 
+}
+#imgtext {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	color: white;
+	font-size: 20px;
+}
+
+
+/* Making a gradient image */
+#grad {
+	background: linear-gradient(90deg, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,0));
+	width: 60%;
+	height: 100%;
+}
+#info1 {
+	margin-left: 50px;
+	margin-top: 50px;
+	height: 80%;
+	background-image: url("images/ellie-sitting1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+/* Hyperlinks and links */
+#hyperlinks {
+	color: #e6c300;
+}
+#hyperlinks:hover {
+	color: #000099;
+}
+#hyperlinks:active {
+	color: #ffffff;
+}
